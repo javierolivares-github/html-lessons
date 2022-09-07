@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What is the article HTML element?</title>
+  <style>
+    .forecast {
+      margin: 0;
+      padding: .3rem;
+      background-color: #eee;
+      font-size: 1rem;
+      width: 100%;
+      max-width: 240px;
+    }
+
+    .forecast>h1,
+    .day-forecast {
+      margin: .5rem;
+      padding: .3rem;
+      font-size: 1.2rem;
+    }
+
+    .day-forecast {
+      background: url('/resources/cloud-rain.svg') no-repeat content-box border-box right/contain white;
+    }
+
+    .day-forecast>h2,
+    .day-forecast>p {
+      margin: .2rem;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+
+<body style="font-family:Arial, Helvetica, sans-serif;">
+
+  <article class="forecast">
+    <h1>Weather forecast for Seattle</h1>
+    <article class="day-forecast">
+      <h2>03 March 2018</h2>
+      <p>Rain.</p>
+    </article>
+    <article class="day-forecast">
+      <h2>04 March 2018</h2>
+      <p>Periods of rain.</p>
+    </article>
+    <article class="day-forecast">
+      <h2>05 March 2018</h2>
+      <p>Heavy rain.</p>
+    </article>
+  </article>
+
+</body>
+
+</html>

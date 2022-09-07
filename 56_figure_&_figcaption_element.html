@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How do the figure & figcaption elements work?</title>
+  <style>
+    figure {
+      border: thin solid #000;
+      display: flex;
+      flex-flow: column;
+      padding: 5px;
+      max-width: 320px;
+      margin: auto;
+    }
+
+    figure>img {
+      width: 100%;
+    }
+
+    figcaption {
+      background-color: #222;
+      color: #fff;
+      font: italic smaller sans-serif;
+      padding: 3px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body style="font-family:Arial, Helvetica, sans-serif;">
+
+  <figure>
+    <img src="/resources/concert-2.jpg" alt="Concert in purple">
+    <figcaption>
+      A great concert
+    </figcaption>
+  </figure>
+
+</body>
+
+</html>
