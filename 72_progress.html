@@ -5,10 +5,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Title</title>
+  <title>The HTML Progress element</title>
+  <style>
+    label,
+    progress {
+      display: block;
+      margin: .4rem;
+    }
+  </style>
 </head>
 
 <body style="font-family:Arial, Helvetica, sans-serif;">
+
+  <label for="file">File progress:</label>
+  <progress id="file" max="100" value="70">70%</progress>
 
 </body>
 
