@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The HTML Canvas: Radial Gradient</title>
+</head>
+
+<body style="font-family:Arial, Helvetica, sans-serif;">
+
+  <canvas id="myCanvas" width="340" height="200" style="border: 1px solid #000;"></canvas>
+
+  <script>
+    const canvas = document.getElementById("myCanvas");
+    const context = canvas.getContext("2d");
+
+    // Create radial gradient
+    let radgrad = context.createRadialGradient(45, 45, 10, 52, 50, 30);
+    radgrad.addColorStop(0, "#a7d30c");
+    radgrad.addColorStop(0.9, "#019f62");
+    radgrad.addColorStop(1, "rgba(1,159,98,0)");
+
+    let radgrad2 = context.createRadialGradient(105, 105, 20, 112, 120, 50);
+    radgrad2.addColorStop(0, "#ff5f98");
+    radgrad2.addColorStop(0.75, "#ff0188");
+    radgrad2.addColorStop(1, "rgba(1,159,98,0)");
+
+    // Fill with gradient
+    context.fillStyle = radgrad;
+    context.fillRect(0, 0, 340, 200);
+    context.fillStyle = radgrad2;
+    context.fillRect(0, 0, 340, 200);
+  </script>
+</body>
+
+</html>

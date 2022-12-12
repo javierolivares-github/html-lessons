@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Input type radio</title>
+  <style>
+    input {
+      margin: .4rem;
+    }
+
+    div {
+      width: 120px;
+    }
+
+    span {
+      float: right;
+    }
+  </style>
+</head>
+
+<body style="font-family:Arial, Helvetica, sans-serif;">
+
+  <h2>Input type radio:</h2>
+
+  <fieldset>
+    <legend>How do you feel today?</legend>
+
+    <div>
+      <input type="radio" name="emotion" id="happy" value="happy" checked>
+      <label for="happy">Happy <span>&#128512;</span></label>
+    </div>
+
+    <div>
+      <input type="radio" name="emotion" id="normal" value="normal">
+      <label for="normal">Normal <span>&#128528;</span></label>
+    </div>
+
+    <div>
+      <input type="radio" name="emotion" id="furious" value="furious">
+      <label for="furious">Furious <span>&#129324;</span></label>
+    </div>
+
+  </fieldset>
+
+</body>
+
+</html>

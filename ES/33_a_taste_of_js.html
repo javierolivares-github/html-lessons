@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Taste of JavaScript</title>
+</head>
+
+<body style="font-family:Arial, Helvetica, sans-serif;">
+
+  <h2>A Taste of JavaScript:</h2> <br>
+
+  <h3>1. JS can change content:</h3>
+  <p id="paragraph1">This is a paragraph with normal content.</p>
+  <hr>
+
+  <h3>2. JS can change style:</h3>
+  <p id="paragraph2">The style of this paragraph comes from JS.</p>
+  <hr>
+
+  <h3>3. JS can change attributes.</h3>
+  <img id="image" src="./resources/magiccard-1.jpg" style="width: 200px" alt="Magic card">
+
+
+
+  <script>
+    // Changing the content
+    document.getElementById('paragraph1').innerHTML = 'The content of this paragraph comes from JS.';
+    // Changing the style
+    document.getElementById('paragraph2').style.color = 'teal';
+    // Changing the attribute
+    document.getElementById('image').src = './resources/magiccard-2.jpg';
+
+  </script>
+
+</body>
+
+</html>

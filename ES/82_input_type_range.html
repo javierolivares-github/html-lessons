@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Input Type Range</title>
+  <style>
+    label {
+      font-size: .9rem;
+    }
+
+    input {
+      margin: .4rem;
+    }
+  </style>
+</head>
+
+<body style="font-family:Arial, Helvetica, sans-serif;">
+
+  <p>Audio settings:</p>
+
+  <div>
+    <input type="range" name="volume" id="volume" min="0" max="11">
+    <label for="volumen">Volume</label>
+  </div>
+
+  <div>
+    <input type="range" name="cowbell" id="cowbell" min="0" max="100" value="90" step="10">
+    <label for="cowbell">Cowbell</label>
+  </div>
+
+</body>
+
+</html>

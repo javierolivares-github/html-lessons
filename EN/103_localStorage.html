@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The localStorage Object</title>
+  <style>
+    code {
+      background: aquamarine;
+    }
+  </style>
+</head>
+
+<body style="font-family:Arial, Helvetica, sans-serif;">
+
+  <h2><code>localStorage:</code></h2>
+  <div>
+    <p id="email"></p>
+    <p id="password"></p>
+  </div>
+
+  <script>
+    // Check the browser support
+    if (typeof (Storage) !== "undefined") {
+
+      // Store
+      localStorage.setItem("Email", "codeprojects@gmail.com");
+      localStorage.setItem("Password", "oooooooo");
+
+      // Retrieve
+      document.getElementById("email").innerHTML =
+        "Email: " + localStorage.getItem("Email");
+
+      document.getElementById("password").innerHTML =
+        "Password: " + localStorage.getItem("Password");
+
+    } else {
+      document.getElementById("email").innerHTML =
+        "Sorry bro, your browser does not support Web Storage..."
+    }
+  </script>
+</body>
+
+</html>

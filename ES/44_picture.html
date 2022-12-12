@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to create different images for different Browser Width?</title>
+</head>
+
+<body style="font-family:Arial, Helvetica, sans-serif;">
+
+  <h2>How to create different images for different Browser Width?</h2>
+
+  <picture>
+    <source srcset="./resources/puppy1.jpg" media="(max-width: 420px)">
+    <source srcset="./resources/puppy2.jpg" media="(max-width: 640px)">
+    <img src="./resources/puppy3.jpg" alt="Puppy 3" style="max-width: 100%;">
+  </picture>
+
+
+</body>
+
+</html>

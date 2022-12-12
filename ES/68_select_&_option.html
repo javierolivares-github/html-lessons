@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Select & Option element</title>
+  <style>
+    .output {
+      background-image: url('/resources/game_of_thrones.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+
+    label {
+      font-size: 1rem;
+      color: #fff;
+      padding-right: 10px;
+      margin: .4rem;
+    }
+
+    select {
+      font-size: .9rem;
+      padding: 2px 5px;
+      margin: .4rem
+    }
+  </style>
+</head>
+
+<body style="font-family:Arial, Helvetica, sans-serif;" class="output">
+
+  <label for="got-books">Choose a Game of Thrones book:</label>
+
+  <select name="got-books" id="got-books">
+    <option value="">--Please select an option--</option>
+    <option value="book-1">A Game of Thrones</option>
+    <option value="book-2">A Clash of Kings</option>
+    <option value="book-3">A Storm of Swords</option>
+    <option value="book-4">A Feast for Crows</option>
+    <option value="book-5">A Dance with Dragons</option>
+  </select>
+
+</body>
+
+</html>
